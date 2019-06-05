@@ -3,8 +3,8 @@
 
 ## Introduzione
 
-Maat è una libreria di funzioni utilizzabili su arduino ( c++ compatibile ) che riguarda l'analisi numerica su arduino.
-Lo scopo del progetto è quello di rendere gli algoritmi numerici fruibili a dispositivi embedded normalmente non predisposti al calcolo fatte varie ipotesi offrendo strumenti utili per l'analisi di segnali e risoluzione di problemi.
+Maat è una libreria di funzioni utilizzabili su Arduino ( c++ compatibile ) che riguarda il calcolo numerico.
+Lo scopo del progetto è quello di rendere gli algoritmi numerici fruibili a dispositivi embedded normalmente non predisposti al calcolo strumenti utili per l'analisi di segnali e risoluzione di problemi.
 
 Date le specifiche molto ristrette di dispositivi quali microcontrollori e pic circa lo spazio ed il tempo in termini algoritmici, l'obiettivo del progetto è quello di cercare di massimizzare entrambe ricorrendo dove possibile a stratagemmi: ad esempio a discapito della risorsa più abbondante come il tempo, alla bontà della soluzione o addirittura sfruttando determinati fenomeni che riguardano la metodologia e l'ambiente embedded.
 
@@ -46,4 +46,4 @@ In ambienti quali arduino, pic e simili l'architettura prevede generalmente alme
 4) **Modularità**
 
   Creare software a blocchi riutilizzabile è certamente comodo per lo sviluppo del programmatore. Lo scopo principale in questo caso però è non è lo sviluppo bensì la memoria.
-  Infatti scrivere blocchi in maniera efficiente (loose coupling) significa caricare solo le componenti necessarie allo scopo, caricando meno codice possibile sulla scheda lasciando spazio per le altri componenti progettuali. 
+  Infatti scrivere blocchi in maniera efficiente (loose coupling) significa caricare solo le componenti necessarie allo scopo, caricando meno codice possibile sulla scheda lasciando spazio per le altri componenti progettuali.
