@@ -47,3 +47,14 @@ In ambienti quali arduino, pic e simili l'architettura prevede generalmente alme
 
   Creare software a blocchi riutilizzabile è certamente comodo per lo sviluppo del programmatore. Lo scopo principale in questo caso però è non è lo sviluppo bensì la memoria.
   Infatti scrivere blocchi in maniera efficiente (loose coupling) significa caricare solo le componenti necessarie allo scopo, caricando meno codice possibile sulla scheda lasciando spazio per le altri componenti progettuali.
+
+
+
+## Struttura del progetto
+
+Questo progetto è strutturato come un insieme di moduli, alcuni dei quali possono dipendere da altri.
+Poiché uno degli obiettivi è il supporto ad Arduino data anche la sua notorietà, si è scelto di adottare la stessa rimanendo comunque compatibilità con progetti c/c++.
+
+Ad ogni modulo corrisponde una cartella con il nome dello stesso, al cui interno è presente un header file con le firme dei metodi ed un file di codice associato.
+
+Cercando di rispettare gli obiettivi di progettazione di spazio, il compilatore potrà includere solamente il codice oggetto riferito al preciso modulo e relative dipendenze. La difficoltà sta nel riuscire a creare codice utile con poche funzionalità in ogni modulo, in maniera tale da minimizzare (con maggiore probabilità) l'inclusione di codice inutilizzato.
