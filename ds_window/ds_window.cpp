@@ -1,14 +1,14 @@
 
-#include <ds_window.h>
+#include "ds_window.h"
 
-window_sample_data create_sample_window(int size_window){
+window_sample_data* create_sample_window(int size_window){
 
-	window_sample_data new_window = new window_sample_data;
+	window_sample_data* new_window = new window_sample_data;
 
-	new_window.X = new double[size_window];
-	new_window.Y = new double[size_window];
-	new_window.size = size_window;
-	new_window.next_free = 0;
+	new_window->X = new double[size_window];
+	new_window->Y = new double[size_window];
+	new_window->size = size_window;
+	new_window->next_free = 0;
 
 	return new_window;
 }

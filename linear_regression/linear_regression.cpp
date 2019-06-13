@@ -20,3 +20,4 @@ void linear_regression( double* X, double* Y, int m, double* a, double* b){
 	*b = ((s2 * t0) - (s1 * t1)) / denom;
 
 }
+
