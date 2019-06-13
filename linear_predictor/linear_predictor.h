@@ -10,7 +10,7 @@
 #ifndef LINEAR_PREDICTOR_H_
 #define LINEAR_PREDICTOR_H_
 
-#include <ds_window/ds_window.h>
+#include "ds_window.h"
 
 /**
  * linear_predictor è la struttura dati che permette la realizzazione
