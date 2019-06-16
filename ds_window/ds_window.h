@@ -26,7 +26,7 @@ typedef struct window_sample_data{
 } window_sample_data;
 
 
-#define get_last_sample_window(window, index)  window->X[ (window->next_free + window->size - 1) % window->size; ]
+#define get_last_sample_window(window, index)  window->X[ (window->next_free + window->size - 1) % window->size ]
 
 window_sample_data* create_sample_window(int size_window);
 
