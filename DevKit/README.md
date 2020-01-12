@@ -60,3 +60,14 @@ In questa cartella è presente un progetto C/CPP, la sua struttura è cosi defin
 
 - **main.cpp**:
   Un main da utilizzare per prove e testing del nuovo modulo e la sua integrazione con il restante ambiente.
+
+## Integrazione con Eclipse IDE for C/C++
+
+Dopo aver configurato il Kit con lo script 'config.sh' e compilare tutti i codici oggetto con il comando 'make all' bisogna importare il progetto in Eclipse come un progetto esistente con Makefile.
+Quindi dalla barra del menu seguire la voce File >> New >> Makefile project with Existing Code: a questo punto sarà possibile impostare un nome del progetto (a piacere) ed ovviamente la Location del progetto, ossia il path della cartella DevKit.
+
+L'ultimo passaggio consiste nel impostare nel progetto Eclipse una nuovo path contenete include (quelli definiti dai moduli) in manira tale da istruire l'IDE sulle possibile librerie e codici disponibili.
+Aprire quindi le impostazioni del progetto e selezionare la scheda "Paths and Symbols", selezionare dalla sezione "Languages" il vostro compilatore CPP in uso (ad esempio GNU C++) ed aggiungere un nuovo path con il pulsante "Add...".
+Ora cliccando sulla finestra in popup il pulsante "workspace" vi sara possibile inserire il nuovo path degli header file: selezionare dal vostro progetto la directory 'include'
+
+A questo punto il progetto è pronto per programmare e compilare.
